@@ -4,7 +4,10 @@ import Interfaces.AparelhoTelefonico;
 import Interfaces.NavegadorWeb;
 import Interfaces.ReprodutorMusical;
 
+import java.util.Scanner;
+
 public class IphoneModel implements ReprodutorMusical, AparelhoTelefonico, NavegadorWeb {
+    Scanner sc = new Scanner(System.in);
     private int codigo;
     private int senha;
     public String nomeUsuario;
@@ -35,7 +38,7 @@ public class IphoneModel implements ReprodutorMusical, AparelhoTelefonico, Naveg
         this.nomeUsuario = nomeUsuario;
     }
 
-    @Override
+   @Override
     public void ligar(String numero) {
         System.out.println("Ligando para " + numero + "...");
     }
@@ -78,5 +81,21 @@ public class IphoneModel implements ReprodutorMusical, AparelhoTelefonico, Naveg
     @Override
     public void selecionarMusica() {
         System.out.println("Trocando para música selecionada");
+    }
+
+
+    public boolean validarSenha(){
+        System.out.print("Digite a senha: ");
+        int senha = sc.nextInt();
+
+        if(senha == this.getSenha()){
+            System.out.println("Acesso permitido!");
+
+            return true;
+        }
+        else {
+            System.out.println("Senha inválida");
+        }
+        return false;
     }
 }
