@@ -1,8 +1,8 @@
 package Interfaces;
 
 public interface ReprodutorMusical {
-    void tocar();
+    void tocar(String musica);
     void pausar();
-    void selecionarMusica(String musica);
+    void selecionarMusica();
 
 }

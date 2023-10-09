@@ -66,17 +66,17 @@ public class IphoneModel implements ReprodutorMusical, AparelhoTelefonico, Naveg
     }
 
     @Override
-    public void tocar() {
-
+    public void tocar(String musica) {
+        System.out.println("Reproduzindo " + musica);
     }
 
     @Override
     public void pausar() {
-
+        System.out.println("Música pausada");
     }
 
     @Override
-    public void selecionarMusica(String musica) {
-
+    public void selecionarMusica() {
+        System.out.println("Trocando para música selecionada");
     }
 }

@@ -16,6 +16,8 @@ public class Main {
         System.out.println();
         ip.iniciarCorreioVoz("(11)97054-6266");
         System.out.println();
+        System.out.println("========= = = = = = = = = = = = ===========");
+        System.out.println();
 
 
         System.out.println("======== Funções de Navegador Web  ==========");
@@ -25,5 +27,15 @@ public class Main {
         System.out.println();
         ip.atualizarPagina();
         System.out.println();
+        System.out.println("========= = = = = = = = = = = = ===========");
+        System.out.println();
+
+        System.out.println("====== Funções de Reprodutor Musical  =======");
+        ip.tocar("O Encontro - Jefersson e Suellen");
+        System.out.println();
+        ip.pausar();
+        System.out.println();
+        ip.selecionarMusica();
+        System.out.println("========= = = = = = = = = = = = ===========");
     }
 }
