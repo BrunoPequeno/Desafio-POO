@@ -15,7 +15,15 @@ public class Main {
         ip.atender("Haruo da DIO");
         System.out.println();
         ip.iniciarCorreioVoz("(11)97054-6266");
-        System.out.println("========== = = = = = = = = = = = ============");
-        
+        System.out.println();
+
+
+        System.out.println("======== Funções de Navegador Web  ==========");
+        ip.exibirPagina("https://web.dio.me");
+        System.out.println();
+        ip.adicionarNovaAba();
+        System.out.println();
+        ip.atualizarPagina();
+        System.out.println();
     }
 }

@@ -52,17 +52,17 @@ public class IphoneModel implements ReprodutorMusical, AparelhoTelefonico, Naveg
 
     @Override
     public void exibirPagina(String url) {
-
+        System.out.println("Abrindo " + url);
     }
 
     @Override
     public void adicionarNovaAba() {
-
+        System.out.println("Nova aba criada!");
     }
 
     @Override
     public void atualizarPagina() {
-
+        System.out.println("Atualizando página... Aguarde");
     }
 
     @Override
